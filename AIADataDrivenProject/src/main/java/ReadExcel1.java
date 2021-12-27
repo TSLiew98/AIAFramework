@@ -8,10 +8,10 @@ import java.io.IOException;
 
 //Testing out reading excel file using Apache POI
 public class ReadExcel1 {
-public static  void main(String args[]) throws IOException {
+	public static  void main(String args[]) throws IOException {
         
         //Create an object of File class to open xlsx file
-        File file =    new File("E:\\AIA documents\\AIA testdata excelsheet.xlsx");
+        File file = new File("E:\\AIA documents\\AIA testdata excelsheet.xlsx");
         
         //Create an object of FileInputStream class to read excel file
         FileInputStream inputStream = new FileInputStream(file);
@@ -25,7 +25,7 @@ public static  void main(String args[]) throws IOException {
         //Create a row object to retrieve row at index 2
         XSSFRow row3=sheet.getRow(2);
         
-        //Create a cell object to retreive cell at index 1
+        //Create a cell object to retrieve cell at index 1
         XSSFCell cell=row3.getCell(1);
         
         //Get the address in a variable
